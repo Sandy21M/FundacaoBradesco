@@ -10,7 +10,6 @@ while i<20:
 media=(soma)/i
 
 print(media)
-10
     
 i = 0
 print('notas > 7,5')
