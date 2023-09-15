@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="jogodeadivinhacao.css">
+        <meta charset="UTF-8">
+        <title>Jogo de Adivinhação</title>
+    </head>
+    <body>
+  
+        <h1>Mini Jogo de Adivinhação</h1>
+        <p>Tente adivinhar um número entre 1 e 100:</p>
+        <input type="number" id="tentativa">
+        <button onclick="verificarAdivinhacao()">Verificar</button>
+        <p id="resultado"></p>
+
+        <script>
+    
+          const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+          let tentativas = 0;
+
+          function verificarAdivinhacao() {
+      
+          const tentativa = parseInt(document.getElementById("tentativa").value);
+
+           if (tentativa === numeroAleatorio) {
+             document.getElementById("resultado").textContent = `Parabéns! Você acertou em ${tentativas + 1} tentativas.`;
+            } else if (tentativa < numeroAleatorio) {
+              document.getElementById("resultado").textContent = "Tente um número maior.";
+            } else {
+             document.getElementById("resultado").textContent = "Tente um número menor.";
+            }
+             tentativas++;
+            }
+       </script>
+    </body>
+</html>

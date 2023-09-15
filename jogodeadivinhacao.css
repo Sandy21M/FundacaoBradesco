@@ -1,0 +1,15 @@
+
+*{
+    margin: 10px;
+    padding: 50px;
+    border: 50px;;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    color: black;
+    font-family: 'poppins', sans-serif;
+
+   }
+ main h1{
+    color: khaki;
+    align-items: center;
+ }
