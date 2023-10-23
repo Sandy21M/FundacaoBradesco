@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header{
+    height: 100px;
+    background: #f6d2fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .menu-bar{
+    width: 80px;
+    height: 80px;
+    
+}
+.menu-container{
+    background-color: #f6d2fe;
+    
+}
+.menu-list{
+   width: 0;
+   height: 100%;
+   overflow: hidden; 
+   transition: width 0.5s;
+   background: #333333;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   position: fixed;
+   top:0;
+   right:0;
+}
+#close, .item{
+    color: white;
+    
+}
+
+#close{
+    width: 100%;
+    text-align: right;
+    padding-right: 30px;
+}
+main{
+    padding: 100px 0;
+    
+}
+.form-container{
+    border-radius: 10px;
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#nome, #senha{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 0px 15px;
+    border: none;
+}
+#cadastrar{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    border: none;
+    background: rgb(154, 0, 123);
+    color: white;
+    box-shadow: 2px 2px 4px rgb(255, 53, 231);
+}
+#cadastrar:hover{
+    background: rgb(252, 127, 127);
+    cursor: pointer;
+}
